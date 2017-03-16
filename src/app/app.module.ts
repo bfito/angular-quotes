@@ -22,7 +22,11 @@ const routes: Routes = [
   // http://localhost:4200
   //   |
   //   --> http://localhost:4200/home
-  { path: '', redirectTo: 'home', pathMatch: 'full'}
+  { path: '', redirectTo: 'home', pathMatch: 'full'},
+
+  { path: 'contacts', component: ContactListComponent },
+  { path: 'contact/:id', component: ContactComponent }
+
 
 ];
 
