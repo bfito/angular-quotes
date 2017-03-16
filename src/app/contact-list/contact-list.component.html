@@ -11,7 +11,7 @@
         <button (click)="viewDetails(contact.id)"> details (btn)  </button>
       </td>
       <td>
-        <a [routerLink]="['contact',contact.id]"> details (link) </a>
+        <a routerLink="'contact', contact['id']"> details (link) </a>
       </td>
     </tr>
   </table>
