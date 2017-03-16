@@ -5,3 +5,7 @@ h2 {
 li {
   background-color: peachpuff;
 }
+
+ul {
+  list-style-type: none;
+}
