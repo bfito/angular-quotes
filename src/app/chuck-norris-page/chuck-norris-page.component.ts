@@ -30,6 +30,12 @@ export class ChuckNorrisPageComponent implements OnInit {
     this.theService.getRandom()
     .then((result) => {
       this.currentJoke = result.value.joke;
+    })
+    .catch((err) => {
+      console.log('Random Joke Error');
+      console.log(err);
+      this.currentJoke = 'There was an error. Try again later.';
+
     });
   }
 }

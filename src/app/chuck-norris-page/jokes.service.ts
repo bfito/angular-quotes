@@ -14,8 +14,11 @@ export class JokesService {
       .toPromise()
       .then(result => result.json())
 
+      // Observable method of dealing with "async code"
       // .map((res) => res.json());
-    // return 'Chuck Norris was bitten by a cobra and after five days of excruciating pain... the cobra died.'
+
+      // Hardcoded joke
+      // return 'Chuck Norris was bitten by a cobra and after five days of excruciating pain... the cobra died.'
 
   }
 }
