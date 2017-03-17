@@ -33,7 +33,9 @@ const routes: Routes = [
 
   { path: 'contact/:id', component: ContactComponent },
 
-  { path: 'counters', component: CountersComponent }
+  { path: 'counters', component: CountersComponent },
+
+  { path: 'chuck', component: ChuckNorrisPageComponent }
 
 
 
