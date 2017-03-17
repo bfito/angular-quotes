@@ -14,13 +14,22 @@ export class ChuckNorrisPageComponent implements OnInit {
   constructor(private theService: JokesService) { }
 
   ngOnInit() {
-    this.theService.getRandom()
-      .then((result) => {
+    // This is to refresh site for random joke
+    // this.theService.getRandom()
+    //   .then((result) => {
         // We cannot guess the structure of result is, this is why we console.log the following:
-        console.log('RANDOM AJAX');
-        console.log(result);
-        this.currentJoke = result.value.joke;
-      })
-  }
+      //   console.log('RANDOM AJAX');
+      //   console.log(result);
+      //   this.currentJoke = result.value.joke;
+      // })
 
+      // this is for getRandomJoke button
+      this.getRandomJoke()
+  }
+  getRandomJoke() {
+    this.theService.getRandom()
+    .then((result) => {
+      this.currentJoke = result.value.joke;
+    });
+  }
 }
